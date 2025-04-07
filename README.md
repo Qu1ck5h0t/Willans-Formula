@@ -7,4 +7,4 @@ It faced heavy criticism due to the computational complexity of (j-1)! nested in
 
 I got very bored on the day of writing this so I decided to implement it in C. While the code is consistent with the given formula, it returns incorrect numbers for n>6, with a pattern of 2^n +1 for n>7. 
 
-After further analysis, I've determined that this behaviour is due to integer overflow of computing (j-1)! for values of j greater than 20, which quickly becomes the case due to the first series having a boundary of 2^n. After that, the rest of the logic consequently breaks.
+After further analysis, I've determined that this behaviour is due to integer overflow of computing (j-1)! for values of j greater than 20, which quickly becomes the case due to the first series having a boundary of 2^n. Consequently, the rest of the logic breaks with incorrect values of (j-1)!.
